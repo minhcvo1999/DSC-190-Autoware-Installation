@@ -1,15 +1,5 @@
 # Minh Vo, Team 4 (Autoware), DSC 190
 
-## Outline of SP24 Activity
-
-- **W1-W2:** Tried to fix localization for Record/Replay Trajectory from F1Tenth Stack
-- **W3:** Abandoned F1Tenth Stack, team split up—I teamed up with Sebastian doing ROS2 Humble Autoware source installation.
-- **W3-W4:** Iteration of autoware stack build (~500 packages) w/ debugging and compiling into “.repos” file, branched out from Sebastian and installed ROS2 Humble Autoware on a different Docker as a backup solution.
-- **W5-W6:** Installed GPS drivers, DepthAI camera drivers, Eagleye.
-- **W7:** Rejoined Sebastian and tried to implement Record/Replay Trajectory using Eagleye, worked on making Pinout diagram of the wiring system for the GoKart.
-- **W8:** Indiana: Helped collect data around the track and worked on mechanical and electrical tasks such as assembling, fabrication work, and soldering components on the GoKart.
-- **W9-W10:** Documentation of activity.
-
 ## ROS2 Humble Autoware Installation with Eagleye on 1/5th Car, with F1Tenth Trajectory Record/Replay guide
 
 ### Prerequisites
@@ -21,8 +11,10 @@
 ### Docker Container Setup
 
 1. **Pull the docker with the command:**
+
+   This is the one I chose but feel free to choose whichever
    ```
-   docker pull ghcr.io/autowarefoundation/
+   docker pull ghcr.io/autowarefoundation/autoware-universe:humble-2024.03-arm64
    ```
 2. **Add the run.sh file to the jetson and edit it to include a volume for autoware and update the image name (last line).**
    ```
